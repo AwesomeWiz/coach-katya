@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>coach katya</title>
+        <meta name="description" content="Katya is your AI-powered career coach—designed for ambitious professionals and future leaders. Whether you are elevating your leadership, navigating career transitions, or seeking strategic insight, Katya delivers expert-trained guidance to help you lead, grow, and thrive.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!--Top Bar-->
+        <header>
+            <span class="logo">coach katya</span>
+
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
+
+            <div class="nav_wrapper">
+                <nav>
+                    <li><a href="#">About Katya</a></li>
+                    <li><a href="#">Organisation</a></li>
+                    <li><a href="#">Individuals</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </nav>
+                <div class="topbar_btns">
+                    <button class="trial_btn">Start free trail<img src="images/arrow.png" alt="Right Arrow Icon"/></button>
+                    <button class="demo_btn">View demo</button>
+                </div>
+            </div>
+        </header>
+
+        <!--Hero Section-->
+        <section class="hero">
+            <img class="line" src="images/Line.png" alt="Line Pattern"/>
+            <div class="career_cont">
+                <img class="job" src="images/job.png" alt="Job Icon"/>
+                <span class="job_text">Your #1 Platform for Career growth</span>
+            </div>
+            <h1 class="hero_head">Katya AI Career Coach</h1>
+            <h2 class="hero_para">Trained on expert startegies, Katya helps you plan<br>your next move, grow professionally, and navigate<br>career decisions.</h2>
+            <div class="hero_btns">
+                <button class="free_btn">Try for free</button>
+                <button class="herodemo_btn">View demo</button>
+            </div>
+            <img class="hero_img" src="images/Macbook Air (2022) 1.png" alt="Macbook Air"/>
+        </section>
+
+        <!--Content-->
+        <section class="content">
+            <div class="subcontent">
+                <h3 class="content_head">AI Coaching Backed by<br>Science, Designed for You</h3>
+                <button class="content_btn">Try Katya</button>
+            </div>
+            <p class="content_para">Katya is your AI-powered career coach—designed for ambitious professionals and future leaders. Whether you are elevating your leadership, navigating career transitions, or seeking strategic insight, Katya delivers expert-trained guidance to help you lead, grow, and thrive.</p>
+        </section>
+
+        <!--Grid Layout-->
+        <section class="grid">
+            <div class="card card1">
+                <img src="images/Abstract Design.png" alt="Abstract Design" class="abstract">
+                <img src="images/meter.png" alt="Meter Vector" class="meter">
+                <img src="images/people.png" alt="People" class="people">
+                <span class="head1">98% Client Success Rate</span>
+                <span class="subhead1">Join a community of satisfied clients benefiting from our proven<br>excellence.</span>
+            </div>
+            <div class="card card2">
+                <img src="images/noise1.png" alt="Noise" class="noise top">
+                <img src="images/noise2.png" alt="Noise" class="noise bottom">
+                <span class="head2">katya</span>
+                <span class="subhead2">Your AI Coach<br>Companion</span>
+                <div class="circle1">
+                    <span class="circle2"></span>
+                </div>
+            </div>
+            <div class="card card3">
+                <img src="images/bar chart.png" alt="Bar Chart" class="bar">
+                <span class="head3">Lead the Way</span>
+                <span class="subhead3">Define, track, and reach your professional milestones with<br>structured, intelligent coaching.</span>
+            </div>
+            <div class="card card4">
+                <span class="head4">Machine learning suggestions</span>
+                <span class="subhead4">Master with<br>katya</span>
+            </div>
+            <div class="card card5">
+                <img src="images/stars.png" alt="Ratings Icon" class="stars">
+                <span class="head5">100k</span>
+                <span class="subhead5">Insert some<br>statistic</span>
+            </div>
+        </section>
+
+    </body>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navWrapper = document.querySelector('.nav_wrapper');
+
+  hamburger.addEventListener('click', () => {
+    navWrapper.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.nav_wrapper nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    navWrapper.classList.remove('active');
+    });
+  });
+</script>
+
+</html>
