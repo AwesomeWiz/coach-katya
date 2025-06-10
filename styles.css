@@ -478,11 +478,20 @@ nav a:hover{
         text-align: left;
         font-size: 16px;
     }
-    .card1,.card2,.card3,.card4,.card5 {
-        margin-right: 30%;
+    .grid {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
-    .subhead2 {
-        font-size: 42px;
+    .card1, .card2, .card3, .card4, .card5 {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto 24px auto;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
     .circle1 {
         width: 300px;
@@ -498,9 +507,11 @@ nav a:hover{
     }
     .subhead4{
         font-size: 45px;
+        margin-bottom: 5%;
     }
     .subhead5 {
         font-size: 30px;
+        margin-bottom: 5%;
     }
 
 }
